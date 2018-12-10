@@ -31,8 +31,8 @@
           </ul>
           <ul>
             <li>
-              <a href="mailto:hello@coidea.website" class="green">
-                <strong>hello@coidea</strong>
+              <a href="mailto:kahoshingaki@gmail.com.website" class="green">
+                <strong>kahoshingaki@gmail.com</strong>
               </a>
             </li>
           </ul>

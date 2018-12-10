@@ -13,7 +13,7 @@
         1234 Sit<br>
         Dolor</p>
         
-        <p><strong><a href="mailto:hello@coidea.website" class="green">hello@coidea.website</a></strong></p>
+        <p><strong><a href="mailto:kahoshingaki@gmail.com.website" class="green">kahoshingaki@gmail.com.website</a></strong></p>
 
         <p><strong>Content</strong><br>
         Topping tart marshmallow. Muffin icing bear claw ice cream marzipan caramels. Sweet apple pie cotton candy gummies. Brownie icing marzipan.</p>
