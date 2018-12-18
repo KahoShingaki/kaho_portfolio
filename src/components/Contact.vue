@@ -2,14 +2,23 @@
   <div>
 
     <div class="contact-holder fade-component">
-      
+
       <!-- headline START -->
-      <h1>Every. Question.<br>Matters.</h1>
+      <h1>Every. Question.</h1>
       <!-- headline END -->
 
       <!-- content START -->
-      <div class="content">
-        <p>Macaroon marzipan halvah topping sugar plum croissant cookie sweet roll. Powder oat cake tart donut pudding caramels jelly-o cookie tootsie roll. Cookie sesame snaps gummi bears dragée apple pie soufflé tiramisu. Icing danish topping.</p>
+      <div class="contact-form">
+        <h3 class="section-title">お問い合わせ</h3>
+        <p>メールアドレス（必須）</p>
+        <input>
+
+        <p>お問い合わせ内容（必須）</p>
+        <textarea></textarea>
+
+        <p>※必須項目は必ずご入力ください</p>
+        <input class="contact-submit" type="submit" value="送信">
+
       </div>
       <!-- content END -->
 
@@ -19,11 +28,11 @@
       <div class="social">
         <ul>
           <li>
-            <a href="mailto:kahoshingaki@gmail.com.website" target="_blank">
+            <a href="mailto:kaho.shingaki@gmail.com.website" target="_blank">
               <div class="logo-bg-holder">
                 <div class="logo-bg social-circle"></div>
               </div>
-              <span>kahoshingaki@gmail.com</span>
+              <span>kaho.shingaki@gmail.com</span>
             </a>
           </li>
         </ul>
@@ -31,12 +40,12 @@
       <!-- social END -->
 
     </div>
-    
+
   </div>
 </template>
 
 <script>
-  
+
   // gsap
   import { TweenMax } from "gsap"
   // scrollmagic
@@ -48,14 +57,14 @@
     name: 'Contact',
     data () {
       return {
-        
+
       }
     },
     mounted () {
-      
+
     },
     methods: {
-      
+
     }
   }
 </script>
@@ -163,7 +172,7 @@
                   transform: translate( -50%, -50% );
                   z-index: -2;
                   opacity: .45;
-                } 
+                }
                 &.social-circle {
                   width: 94px;
                   height: 94px;

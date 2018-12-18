@@ -13,11 +13,7 @@
                 author<span>.</span>
               </router-link>
             </li>
-            <li>
-              <router-link :to="'/works'" exact>
-                works<span>.</span>
-              </router-link>
-            </li>
+          
             <li>
               <router-link :to="'/contact'" exact>
                 contact<span>.</span>
@@ -48,7 +44,7 @@
     name: 'AppFooter',
     data () {
       return {
-        
+
       }
     }
   }

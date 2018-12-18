@@ -26,11 +26,7 @@
               author<span>.</span>
             </router-link>
           </li>
-          <li>
-            <router-link :to="'/works'" exact>
-              works<span>.</span>
-            </router-link>
-          </li>
+
           <li>
             <router-link :to="'/contact'" exact>
               contact<span>.</span>
@@ -41,12 +37,12 @@
       <!-- navigation:nav:main START -->
 
     </nav>
-    
+
   </div>
 </template>
 
 <script>
-  
+
   // gsap
   import { TweenMax } from "gsap"
   // scrollmagic
@@ -82,7 +78,7 @@
       animateNavigation: function() {
         // comon -> sidebar -> navigation timeline
         let controller = new ScrollMagic.Controller(),
-            timeline = new TimelineMax(); 
+            timeline = new TimelineMax();
 
         $('.navigation .oval-big').removeClass('rotating-fast');
         $('.navigation .oval-small').removeClass('rotating-slow');
@@ -96,18 +92,18 @@
 
         timeline.fromTo( $('.navigation .circle'), 3, { scale: 0, transformOrigin:"50% 50%" }, { force3D:true, scale: 1, transformOrigin:"50% 50%", ease: Back.easeOut.config(2.25) } )
         timeline.fromTo( $('.navigation .oval-small'), 2.5, { autoAlpha: 0, scale: 0, transformOrigin:"50% 50%" }, { force3D:true, autoAlpha: 0.45, scale: 1, transformOrigin:"50% 50%", ease: Back.easeOut.config(2.25) }, '-=2.25' )
-        timeline.fromTo( $('.navigation .oval-big'), 2.5, { autoAlpha: 0, scale: 0, transformOrigin:"50% 50%" }, { force3D:true, autoAlpha: 0.25,scale: 1, transformOrigin:"50% 50%", ease: Back.easeOut.config(2.25) }, '-=2.25' ) 
+        timeline.fromTo( $('.navigation .oval-big'), 2.5, { autoAlpha: 0, scale: 0, transformOrigin:"50% 50%" }, { force3D:true, autoAlpha: 0.25,scale: 1, transformOrigin:"50% 50%", ease: Back.easeOut.config(2.25) }, '-=2.25' )
         timeline.fromTo( $('.navigation .logo-txt'), 2.5, { autoAlpha: 0, x: -80 }, { autoAlpha: 1, x: 0, ease: Expo.easeOut }, '-=2.65' )
         timeline.fromTo( $('.navigation .main-navigation'), 2.5, { autoAlpha: 0, x: -80 }, { autoAlpha: 1, x: 0, ease: Expo.easeOut }, '-=2.5' )
         timeline.fromTo( $('.fade-component'), 2.5, { autoAlpha: 0 }, { autoAlpha: 1, ease: Expo.easeOut }, '-=2.5' )
         timeline.fromTo( $('.cookies'), 2.5, { autoAlpha: 0 }, { autoAlpha: 1, ease: Expo.easeOut }, '-=0.25' )
-        // timeline.to( $('.navigation .oval-big'), 0.35, { className:"+=rotating-fast", ease: Expo.easeOut }, '+=2.35' ) 
+        // timeline.to( $('.navigation .oval-big'), 0.35, { className:"+=rotating-fast", ease: Expo.easeOut }, '+=2.35' )
         // timeline.to( $('.navigation .oval-small'), 0.35, { className:"+=rotating-slow", ease: Expo.easeOut }, '+=2.35' )
         setTimeout(function() {
           $('.navigation .oval-big').addClass('rotating-fast');
-          $('.navigation .oval-small').addClass('rotating-slow'); 
+          $('.navigation .oval-small').addClass('rotating-slow');
         }, 3650)
-        
+
       }
 
     }
@@ -223,7 +219,7 @@
             z-index: 2;
             opacity: 0;
             visibility: hidden;
-          } 
+          }
           &.circle {
             width: 48px;
             height: 48px;

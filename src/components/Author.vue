@@ -9,13 +9,12 @@
 
       <!-- content START -->
       <div class="content">
-        <p>Topping tart marshmallow. Muffin icing bear claw ice cream marzipan caramels. Sweet apple pie cotton candy gummies. Brownie icing marzipan.</p>
+        <p>フロントエンドエンジニアを目指す元BAのポートフォリオサイトです。</p>
+        <p>1994.7.7沖縄生まれ</p>
+　
+        <p>BA(ビューティーアドバイザー)職を経てフロントエンドエンジニアになるために日々勉強中です！</p>
 
-        <p>Oat cake gingerbread tootsie roll ice cream dragée gummies biscuit pudding fruitcake. Lollipop jelly-o pudding lollipop lemon drops jelly-o lemon drops fruitcake jelly. Dessert sweet roll croissant oat cake muffin carrot cake lemon drops muffin dessert. Sweet dessert ice cream croissant pudding.</p>
-
-        <p>Topping apple pie soufflé sweet gingerbread sugar plum cheesecake bear claw carrot cake. Bear claw donut marshmallow fruitcake jelly beans. Candy jujubes topping cake.</p>
-
-        <p>Gingerbread jelly-o cheesecake candy canes gummies cake chocolate cheesecake cupcake. Cheesecake bear claw liquorice sesame snaps ice cream lemon drops cotton candy. Croissant soufflé gingerbread cotton candy toffee gummies. Candy pie cookie candy canes croissant chocolate tart.</p>
+        <p>Learning: HTML, CSS, Java script, Vue.js</p>
       </div>
       <!-- content END -->
 
@@ -25,27 +24,11 @@
       <div class="social">
         <ul>
           <li>
-            <a href="https://www.instagram.com/coidea.website/" target="_blank">
-              <div class="logo-bg-holder">
-                <div class="logo-bg social-oval-big rotating-fast"></div>
-              </div>
-              <span>images</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:kahoshingaki@gmail.com.website" target="_blank">
+            <a href="https://www.facebook.com/kaho.shingaki" target="_blank">
               <div class="logo-bg-holder">
                 <div class="logo-bg social-circle"></div>
               </div>
-              <span>answers</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/COIDEAwebsite" target="_blank">
-              <div class="logo-bg-holder">
-                <div class="logo-bg social-oval-small rotating-slow"></div>
-              </div>
-              <span>infos</span>
+              <span>Facebook</span>
             </a>
           </li>
         </ul>
