@@ -4,11 +4,11 @@
     <div class="cookies" v-if="cookies == false">This website use cookies to ensure that I give you the best experience on my website.<br><span class="green"><span class="link" @click="allowCookies()">OK, CLOSE</span> this message or see <router-link :to="'/imprint'" exact>imprint</router-link> for more infos.</span></div>
 
     <nav class="navigation" v-if="$route.name !== 'Home'">
-      
+
       <!-- navigation:logo START -->
       <div class="logo">
         <router-link :to="'/'" exact>
-          <img width="380" height="199" class="logo-txt" src="/static/logo.png" alt="MH - Web Designer & Developer - Logo" />
+          <img width="430" height="250" class="logo-txt" src="/static/KS.png" alt="KS - Frontend Developer - Logo" />
           <div class="logo-bg-holder">
             <div class="logo-bg oval-big"></div>
             <div class="logo-bg oval-small"></div>

@@ -6,7 +6,7 @@
 
       <!-- home:logo START -->
       <div class="logo">
-        <img width="380" height="199" class="logo-txt" src="https://coidea.website/demos/mh-portfolio-vuejs-and-gsap-template/static/logo.png" alt="MH - Web Designer & Developer - Logo" />
+        <img width="380" height="380" class="logo-txt" src="/static/KStop.png" alt="KS - Frontend Developer - Logo" />
         <div class="logo-bg-holder">
           <div class="logo-bg oval-big"></div>
           <div class="logo-bg oval-small"></div>
@@ -35,12 +35,12 @@
 
     </div>
     <!-- home END -->
-    
+
   </div>
 </template>
 
 <script>
-  
+
   // gsap
   import { TweenMax } from "gsap"
   // scrollmagic
@@ -52,7 +52,7 @@
     name: 'Home',
     data () {
       return {
-        
+
       }
     },
     mounted () {
@@ -62,7 +62,7 @@
       animateLogo: function() {
         // comon -> sidebar -> navigation timeline
         let controller = new ScrollMagic.Controller(),
-            timeline = new TimelineMax(); 
+            timeline = new TimelineMax();
 
         timeline.set($('.logo .circle'), { scale:0, z: 0.01 } );
         timeline.set($('.logo .oval-small'), { autoAlpha: 0, scale:0, z: 0.01 } );
@@ -72,12 +72,12 @@
 
         timeline.fromTo( $('.logo .circle'), 3, { scale: 0, transformOrigin:"50% 50%" }, { force3D:true, scale: 1, transformOrigin:"50% 50%", ease: Back.easeOut.config(2.25) } )
         timeline.fromTo( $('.logo .oval-small'), 2.5, { autoAlpha: 0, scale: 0, transformOrigin:"50% 50%" }, { force3D:true, autoAlpha: 1, scale: 1, transformOrigin:"50% 50%", ease: Back.easeOut.config(2.25) }, '-=2.25' )
-        timeline.fromTo( $('.logo .oval-big'), 2.5, { autoAlpha: 0, scale: 0, transformOrigin:"50% 50%" }, { force3D:true, autoAlpha: 1,scale: 1, transformOrigin:"50% 50%", ease: Back.easeOut.config(2.25) }, '-=2.25' ) 
-        timeline.to( $('.logo .oval-big'), 0, { className:"+=rotating-fast", ease: Expo.easeOut }, '+=0.35' ) 
+        timeline.fromTo( $('.logo .oval-big'), 2.5, { autoAlpha: 0, scale: 0, transformOrigin:"50% 50%" }, { force3D:true, autoAlpha: 1,scale: 1, transformOrigin:"50% 50%", ease: Back.easeOut.config(2.25) }, '-=2.25' )
+        timeline.to( $('.logo .oval-big'), 0, { className:"+=rotating-fast", ease: Expo.easeOut }, '+=0.35' )
         timeline.to( $('.logo .oval-small'), 0, { className:"+=rotating-slow", ease: Expo.easeOut }, '+=0.35' )
         timeline.fromTo( $('.logo .logo-txt'), 2.5, { autoAlpha: 0, x: -80 }, { autoAlpha: 1, x: 0, ease: Expo.easeOut }, '-=2.65' )
-        timeline.fromTo( $('.custom-navigation'), 2.5, { autoAlpha: 0, x: -80 }, { autoAlpha: 1, x: 0, ease: Expo.easeOut }, '-=2.45' ) 
-        
+        timeline.fromTo( $('.custom-navigation'), 2.5, { autoAlpha: 0, x: -80 }, { autoAlpha: 1, x: 0, ease: Expo.easeOut }, '-=2.45' )
+
       }
     }
   }
@@ -173,7 +173,7 @@
           z-index: 2;
           opacity: 0;
           visibility: hidden;
-        } 
+        }
         &.circle {
           width: 360px;
           height: 360px;
