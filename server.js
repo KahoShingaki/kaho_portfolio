@@ -8,7 +8,7 @@ const app = express();
 
 // どこにアクセスさせるかの設定
 // distフォルダ：コンパイルされたファイルが入る場所
-app.use(express.static("dist");
+app.use(express.static("dist"));
 
 // SPAの時、ルーティングがうまくいかない時があるので以下の設定
 // これをしていないと、https://~~~/aboutとかに行った時にリロードするとエラーがでる
