@@ -8,7 +8,7 @@ const app = express();
 
 // どこにアクセスさせるかの設定
 // distフォルダ：コンパイルされたファイルが入る場所
-app.use(express.static(__dirname + "/dist/"));
+app.use(express.static("dist");
 
 // SPAの時、ルーティングがうまくいかない時があるので以下の設定
 // これをしていないと、https://~~~/aboutとかに行った時にリロードするとエラーがでる
@@ -16,7 +16,7 @@ app.use(express.static(__dirname + "/dist/"));
 // これでルート以外でリロードしてもindex.htmlを読み込んでちゃんとルーティングをしてくれる
 // /.*/で全てのルートを指定。req(request), res(response)
 app.get(/.*/, function(req, res) {
-    res.sendfile(__dirname + "/dist/index.html");
+    res.sendfile("dist/index.html");
 });
 
 // 一番上で指定したportをlisten
