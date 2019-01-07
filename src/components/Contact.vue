@@ -9,17 +9,26 @@
 
       <!-- content START -->
       <div class="contact-form">
-        <h3 class="section-title">お問い合わせ</h3>
+      <h3 class="section-title">お問い合わせ</h3>
+
+        <form :class="[ 'mx-auto' , { 'was-validated' : !isFormValid } ]"  id="mainForm">
         <p>メールアドレス（必須）</p>
-        <input>
+        <input type="email" v-model.trim="mail" class="form-control" id="mailInput" name="mail">
+        <p>{{mail}}</p>
 
         <p>お問い合わせ内容（必須）</p>
-        <textarea></textarea>
+        <textarea v-model="message"></textarea>
+        <pre>{{message}}</pre>
 
         <p>※必須項目は必ずご入力ください</p>
-        <input class="contact-submit" type="submit" value="送信">
+
+        <input id="submit" type="button" name="submit" value="作成" v-on:click="submit" class="btn btn-primary btn-block" :disabled=isNoInput>
+        </form>
+
 
       </div>
+
+
       <!-- content END -->
 
       <h2 class="divider-line fade-component"><span>email</span></h2>
@@ -28,11 +37,11 @@
       <div class="social">
         <ul>
           <li>
-            <a href="mailto:kaho.shingaki@gmail.com.website" target="_blank">
+            <a href="mailto:kahoshingaki@gmail.com.website" target="_blank">
               <div class="logo-bg-holder">
                 <div class="logo-bg social-circle"></div>
               </div>
-              <span>kaho.shingaki@gmail.com</span>
+              <span>kahoshingaki@gmail.com</span>
             </a>
           </li>
         </ul>
@@ -69,6 +78,42 @@
   }
 </script>
 
+<script>
+export default {
+  data () {
+    return {
+      isFormValid: true
+    }
+  },
+  methods: {
+    submit: function () {
+      const formho = document.getElementById('mainForm')
+
+      if (!formho.checkValidity()) {
+        this.isFormValid = false
+      } else {
+        this.isFormValid = true
+      }
+
+      const mailgun = require('mailgun.js')
+      const mg = mailgun.client({username: 'api', key: process.env.MAILGUN_APIKEY})
+      mg.messages.create(process.env.MAILGUN_DOMAIN, {
+        from: "Excited User <kahoshingaki@gmail.com>",
+        to: [this.mail],
+        subject: '送信を受け付けました。',
+        text: this.message,
+        html: "<h1>Testing some Mailgun awesomness!</h1>"
+      })
+      .then(msg => console.log(msg)) // logs response data
+      .catch(err => console.log(err)); // logs any error
+
+      alert(this.mail + this.message)
+    }
+  }
+}
+
+
+</script>
 <style lang="scss" scoped>
   // mixins - media query
   @mixin maxquery($width, $ratio: false) {
