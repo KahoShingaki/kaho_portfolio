@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Author from '@/components/Author'
-import Works from '@/components/Works'
+import Components from '@/components/Components'
 import Contact from '@/components/Contact'
 import Imprint from '@/components/Imprint'
 
@@ -23,9 +23,9 @@ export default new Router({
       component: Author
     },
     {
-      path: '/works',
-      name: 'Works',
-      component: Works
+      path: '/components',
+      name: 'Components',
+      component: Components
     },
     {
       path: '/contact',

@@ -1,8 +1,18 @@
+
+
+
+
+
+
+
+
+
+
 <template>
   <div>
 
     <div class="imprint-holder fade-component">
-      
+
       <!-- headline START -->
       <h1>Every. Rule.<br>Matters.</h1>
       <!-- headline END -->
@@ -12,7 +22,7 @@
         <p>Lorem Ipsum<br>
         1234 Sit<br>
         Dolor</p>
-        
+
         <p><strong><a href="mailto:kahoshingaki@gmail.com.website" class="green">kahoshingaki@gmail.com.website</a></strong></p>
 
         <p><strong>Content</strong><br>
@@ -35,7 +45,7 @@
 </template>
 
 <script>
-  
+
   // gsap
   import { TweenMax } from "gsap"
   // scrollmagic
@@ -47,14 +57,14 @@
     name: 'Imprint',
     data () {
       return {
-        
+
       }
     },
     mounted () {
-      
+
     },
     methods: {
-      
+
     }
   }
 </script>
@@ -162,7 +172,7 @@
                   transform: translate( -50%, -50% );
                   z-index: -2;
                   opacity: .45;
-                } 
+                }
                 &.social-circle {
                   width: 94px;
                   height: 94px;

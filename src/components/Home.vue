@@ -29,6 +29,13 @@
               contact<span>.</span>
             </router-link>
           </li>
+
+          <li>
+            <router-link :to="'/components'" exact>
+              components<span>.</span>
+            </router-link>
+          </li>
+
         </ul>
       </div>
       <!-- home:custom-navigation END -->
